@@ -41,7 +41,6 @@ graph LR
 ### Embedding 模型
 - **選用**：`paraphrase-multilingual-MiniLM-L12-v2`（sentence-transformers）
 - **理由**：法規文件中英混合（TFDA 中文 + ISO/IEC 英文），此模型支援 50+ 語言，384 維向量平衡速度與品質
-- **完全免費**：本地執行，無需 API Key，無 $3 預算消耗壓力
 
 ### Vector DB 選型
 - **選用**：ChromaDB
@@ -85,7 +84,7 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.example .env
-# 填入 LITELLM_API_KEY 與 LITELLM_BASE_URL（助教提供）
+# 填入 LITELLM_API_KEY 與 LITELLM_BASE_URL
 ```
 
 ### 4-5. 放入原始文件
